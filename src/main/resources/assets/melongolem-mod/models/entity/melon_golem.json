@@ -1,0 +1,7 @@
+{
+  "parent": "entity/snow_golem",
+  "textures": {
+    "layer0": "melongolem-mod:textures/entity/melon_golem.png",
+    "attack": "melongolem-mod:textures/entity/melon_golem_attack.png"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "melongolem-mod:block/curved_melon" },
+    "facing=south": { "model": "melongolem-mod:block/curved_melon", "y": 180 },
+    "facing=west":  { "model": "melongolem-mod:block/curved_melon", "y": 270 },
+    "facing=east":  { "model": "melongolem-mod:block/curved_melon", "y": 90 }
+  }
+}

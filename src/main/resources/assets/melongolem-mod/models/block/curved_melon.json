@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "north": "melongolem-mod:block/curved_melon_front",
+    "south": "minecraft:block/melon_side",
+    "east": "minecraft:block/melon_side",
+    "west": "minecraft:block/melon_side",
+    "up": "minecraft:block/melon_top",
+    "down": "minecraft:block/melon_top",
+    "particle": "#north"
+  }
+}

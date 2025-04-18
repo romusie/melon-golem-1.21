@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:entity_type",
+  "pools": [
+    {
+      "name": "melon_golem"
+    }
+  ]
+}

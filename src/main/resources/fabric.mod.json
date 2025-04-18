@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "melongolem-mod",
+	"version": "0.0.1",
+	"name": "MelonGolem Mod",
+	"description": "Just new mob!!",
+	"authors": [
+		"romusie!"
+	],
+	"contact": {
+		"homepage": "dont have one",
+		"sources": "yeah..."
+	},
+	"license": "MIT",
+	"icon": "assets/melongolem-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.romusie.melongolemmod.MelonGolemMod"
+		],
+		"fabric-datagen": [
+			"net.romusie.melongolemmod.MelonGolemModDataGenerator"
+		],
+		"client": [
+			"net.romusie.melongolemmod.MelonGolemModClient"
+		]
+	},
+	"mixins": [
+		"melongolem-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
