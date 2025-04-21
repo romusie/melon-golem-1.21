@@ -14,7 +14,7 @@ public class MelonGolemModClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
 
-        EntityModelLayerRegistry.registerModelLayer(MelonGolemModel.PIECE2, MelonGolemModel::getTexturedModelData);
+        EntityModelLayerRegistry.registerModelLayer(MelonGolemModel.MELONGOLEM, MelonGolemModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.MELON_GOLEM, MelonGolemRenderer::new);
 
 

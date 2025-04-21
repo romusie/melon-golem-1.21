@@ -2,11 +2,16 @@ package net.romusie.melongolemmod.entity.custom;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.entity.AnimationState;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.RangedAttackMob;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.data.DataTracked;
+import net.minecraft.entity.data.DataTracker;
+import net.minecraft.entity.data.TrackedData;
+import net.minecraft.entity.data.TrackedDataHandlerRegistry;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.mob.Monster;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
@@ -26,6 +31,19 @@ import net.minecraft.world.event.GameEvent;
 import org.jetbrains.annotations.Nullable;
 
 public class MelonGolemEntity extends GolemEntity implements RangedAttackMob {
+
+    public final AnimationState idleAnimationState = new AnimationState();
+    private int idleAnimationTimeout = 0;
+
+    private void setupAnimationStates() {
+        if (this.idleAnimationTimeout <= 0) {
+            this.idleAnimationTimeout = 40;
+            this.idleAnimationState.start(this.age);
+        } else {
+            --this.idleAnimationTimeout;
+        }
+    }
+
 
     public MelonGolemEntity(EntityType<? extends GolemEntity> entityType, World world) {
         super(entityType, world);

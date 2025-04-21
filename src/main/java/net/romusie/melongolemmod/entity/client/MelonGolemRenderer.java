@@ -12,7 +12,7 @@ public class MelonGolemRenderer extends MobEntityRenderer<MelonGolemEntity, Melo
 
 
     public MelonGolemRenderer(EntityRendererFactory.Context context) {
-        super(context, new MelonGolemModel<>(context.getPart(MelonGolemModel.PIECE2)), 0.75f);
+        super(context, new MelonGolemModel<>(context.getPart(MelonGolemModel.MELONGOLEM)), 0.75f);
     }
 
     @Override
